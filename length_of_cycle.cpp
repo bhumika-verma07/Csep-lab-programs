@@ -46,7 +46,7 @@ int main() {
     third->next = fourth;
     fourth->next = fifth;
 
-    
+    //creating a cycle
     fifth->next = third;
 
     int length = cycleLength(head);
