@@ -7,12 +7,12 @@ bool isValid(string s) {
 
     for (char ch : s) {
 
-        // If opening bracket, push it
+        // opening bracket >> push
         if (ch == '(' || ch == '{' || ch == '[') {
             st.push(ch);
         }
 
-        // If closing bracket
+        // closing bracket
         else {
             if (st.empty()) {
                 return false;
